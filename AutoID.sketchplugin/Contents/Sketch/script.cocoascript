@@ -1,0 +1,47 @@
+          var onRun = function(context) {
+                    
+var pages = context.document.pages();
+var numPages = pages.count();
+
+var next = 1;
+for (var i = 0; i < numPages; i++) {
+    var updated = renamePage(pages[i], next);
+    if(updated) next++
+}
+
+function isNumber(str) {
+    return !isNaN(str);
+}
+
+function renamePage(page, newId) {
+    var name = page.name();
+    // skip separators and Symbols pages.
+    if(name.indexOf("---") === 0) return false;
+    if(name.indexOf("Symbols") === 0) return false;
+    rename(page, newId);
+    var artboards = page.artboards();
+    var numArtboards = artboards.count();
+    var next = 1;
+    for (var i = numArtboards; i > 0; i--) {
+        rename(artboards[i-1], newId+"."+next);
+        next++
+    }
+    return true;
+}
+
+function rename(obj, newId) {
+    var name = obj.name();
+    var pos = name.indexOf(" ");
+    // remove old id
+    if(pos >= 0) {
+        var old = name.substr(0, pos);
+        if(isNumber(old)) {
+            name = name.substr(pos + 1);
+        }
+    }
+    //if(newId < 10) newId = "0"+newId;
+    obj.setName(newId + ' ' + name);
+}
+
+          };
+          
