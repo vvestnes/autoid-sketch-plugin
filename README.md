@@ -16,12 +16,16 @@ Landingpage
 </ul>
 
 Signup
-   Mobile
+<ul>
+   <li>Mobile</li>
+</ul>
 
 Login
-   Mobile design
-   Tablet design
-   Desktop (mockup)
+<ul>
+   <li>Mobile design</li>
+   <li>Tablet design</li>
+   <li>Desktop (mockup)</li>
+</ul>
 
 Symbols
 
@@ -32,21 +36,28 @@ Running AutoID in this sketch document
 will give the following result (Pages and Artboard names):
 
 1 Landingpage
-   1.1 My first Artboard!
-   1.2 Another artboard
-   1.3 Testing more artboards
+<ul>
+   <li>1.1 My first Artboard!</li>
+   <li>1.2 Another artboard</li>
+   <li>1.3 Testing more artboards</li>
+</ul>
 
 2 Signup
-   2.1 Mobile
+<ul>
+   <li>2.1 Mobile</li>
+</ul>
 
 3 Login
-   3.1 Mobile design
-   3.2 Tablet design
-   3.3 Desktop (mockup)
+<ul>
+   <li>3.1 Mobile design</li>
+   <li>3.2 Tablet design</li>
+   <li>3.3 Desktop (mockup)</li>
+</ul>
 
 Symbols
 
 
+<hr/>
 
 PS!
 If you use "empty pages" with names starting with "---" to separate pages, they will
