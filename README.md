@@ -1,52 +1,60 @@
 # autoid-sketch-plugin
 
 
-This plugin will rename all pages in your document with an incremental ID.
+This plugin will prepend an unique (incremental) ID on all your Pages and Artboards, contained in your
+sketch document. (Except "Symbols" page and pages with names starting with "---")
 
-e.g your pages:
+
+Example: You sketch document contains 3 pages:
+
 
 Landingpage
+<ul>
+   <li>My first Artboard!</li>
+   <li>Another artboard</li>
+   <li>Testing more artboards</li>
+</ul>
+
 Signup
+   Mobile
+
 Login
-Desktop
+   Mobile design
+   Tablet design
+   Desktop (mockup)
 
-
-*** Then run AutoID plugin ***
-
-Result:
-
-1 Landingpage
-2 Signup
-3 Login
-4 Desktop
+Symbols
 
 
 
+Running AutoID in this sketch document
 
-If you use empty pages with names starting with "---", they will
-be handled as separators and not included by the AutoID plugin.
-
-"Symbols" page will NOT be given any ID.
-
-
-
-All Artboards will also be renamed with a prepended UniqueID.
-Each Artboard will get Page id + sequance number as id, for
-example 1.1, 1.2, 1.3 etc...
-
-If Landingpage has 3 Artboards, by example "Mobile", "Tablet", "Desktop",
-Their new names will be 
+will give the following result (Pages and Artboard names):
 
 1 Landingpage
-   1.1 Mobile
-   1.2 Tablet
-   1.3 Desktop
+   1.1 My first Artboard!
+   1.2 Another artboard
+   1.3 Testing more artboards
 
 2 Signup
    2.1 Mobile
-   2.2 Tablet
-   2.3 Desktop
 
-etc...
+3 Login
+   3.1 Mobile design
+   3.2 Tablet design
+   3.3 Desktop (mockup)
+
+Symbols
+
+
+
+PS!
+If you use "empty pages" with names starting with "---" to separate pages, they will
+be ingored by AutoID plugin.
+
+"Symbols" page will also be ignored.
+
+
+
 
 Enjoy! 
