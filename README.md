@@ -9,6 +9,15 @@ sketch document. (Except "Symbols" page and pages with names starting with "---"
 />
 
 
+https://user-images.githubusercontent.com/256259/28485065-0aface62-6e77-11e7-9c87-557e3e9dd22e.jpg
+
+
+another img
+
+<img src="https://user-images.githubusercontent.com/256259/28485065-0aface62-6e77-11e7-9c87-557e3e9dd22e.jpg" />
+
+
+
 Example: You sketch document contains 3 pages:
 
 
