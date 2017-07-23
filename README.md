@@ -72,4 +72,13 @@ be ingored by AutoID plugin.
 
 
 
+
+<hr/>
+
+Version:
+
+1.1 Make AutoID only give id to pages which contains artboards (pages without artboards will be left unchanged)
+
+1.0 First release
+
 Enjoy! 
