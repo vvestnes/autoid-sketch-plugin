@@ -1,16 +1,12 @@
 # autoid-sketch-plugin
 
 
-This plugin will prepend an unique (incremental) ID on all your Pages and Artboards, contained in your
-sketch document. (Except "Symbols" page and pages with names starting with "---")
-
+This plugin will prepend an incremental ID on all your Pages and Artboards.
 
 <img src="https://user-images.githubusercontent.com/256259/28485065-0aface62-6e77-11e7-9c87-557e3e9dd22e.jpg" />
 
 
-
 Example: You sketch document contains 3 pages:
-
 
 Landingpage
 <ul>
@@ -63,19 +59,10 @@ Symbols
 
 <hr/>
 
-PS!
-If you use "empty pages" with names starting with "---" to separate pages, they will
-be ingored by AutoID plugin.
-
-"Symbols" page will also be ignored.
-
-
-
-
-
-<hr/>
 
 Version:
+
+1.2 Applies ids X to all pages, and X.Y on all artboards. where X = incremental page number, and Y = incremental artboard number. 
 
 1.1 Make AutoID only give id to pages which contains artboards (pages without artboards will be left unchanged)
 
